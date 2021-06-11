@@ -1,0 +1,37 @@
+<html>
+<head>
+<script>
+function add(){
+var a,b,c,mod;
+
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=Number(document.getElementById("third").value);
+
+mod=Math.pow(a,b)%c;
+
+document.getElementById("answer").value= mod;
+}
+</script>
+</head>
+<body>
+Enter BASE : <input id="first">
+<br>
+<br>
+
+Enter POWER: <input id="second">
+<br>
+<br>
+
+Enter DIVISOR : <input id="third">
+<br>
+<br>
+
+
+
+
+
+<button onclick="add()">REMAINDER</button>
+<input id="answer">
+</body>
+</html>
